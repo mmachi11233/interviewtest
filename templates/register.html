@@ -1,76 +1,10 @@
 
 
 {% extends "layout.html" %}
-<script src="static/myScripts.js"></script>
+
 {% block content %}
 
-
-
-    <div class ="content-section">
-        <form method="POST" action="">
-            {{ form.hidden_tag() }}
-            <fieldset class ="from-group">
-                <legend class="border-bottom mb-4">Fill in details</legend>
-                <div class="form-group">
-                    {{ form.fullname.label(class="form=control-label") }}
-                    {{ form.fullname(class="form=control form=control-lg") }}
-                </div>
-                <div class="form-group">
-                    {{ form.email.label(class="form=control-label") }}
-                    {{ form.email(class="form=control form=control-lg") }}
-                </div>
-                 <div class="form-group">
-                    <label for="refnum">Reference number</label>
-                    <input type ="text" id="refnum" name="refnum" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" class="form=control form=control-lg"></input>
-                </div>
-
-                 <div class="form-group">
-                     <label for="car">Choose your option</label>
-                     <select id="car" onchange="ChangeCarList()">
-                        <option value="">-- Car --</option>
-                        <option value="VO">Volvo</option>
-                        <option value="VW">Volkswagen</option>
-                        <option value="BMW">BMW</option>
-                        <option value="FORD">FORD</option>
-                        <option value="PORSCHE">PORSCHE</option>
-                        <option value="BENTLY">BENTLY</option>
-                        <option value="TESLA">TESLA</option>
-                        <option value="LUX">LUX</option>
-                        <option value="LEXUS">LEXUS</option>
-                        <option value="VROOM">VROOM</option>
-                      </select>
-
-                      <select id="carmodel"></select>
-
-                </div>
-                <div class="form-group">
-
-                    <input type ="checkbox" id="1" name="1" value="Engine"></input>
-                    <label for="1">Engine issue</label><br>
-                    <input type ="checkbox" id="2" name="2" value="gearbox"></input>
-                    <label for="2">Gearbox issue</label><br>
-                    <input type ="checkbox" id="3" name="3" value="body"></input>
-                    <label for="3">Need body repair </label><br>
-                    <input type ="checkbox" id="4" name="4" value="repaint"></input>
-                    <label for="4">Need repainting </label><br>
-                    <input type ="checkbox" id="5" name="5" value="wiring"></input>
-                    <label for="5">Wiring probkems</label><br>
-                    <input type ="checkbox" id="6" name="6" value="Engine"></input>
-                    <label for="6">Oil leakage</label><br>
-                    <input type ="checkbox" id="7" name="7" value="Engine"></input>
-                    <label for="7">Break issuee</label><br>
-            </div>
-                <div class="form-group">
-                    {{ form.submit(class="btn btn-outline-info") }}
-            </div>
-            </fieldset>
-
-
-        </form>
-
-
-    </div>
-
+successfull
 
 {% endblock content %}
 
